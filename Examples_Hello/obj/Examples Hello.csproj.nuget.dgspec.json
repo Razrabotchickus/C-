@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/andrew/Desktop/Projects/Examples Hello/Examples Hello.csproj": {}
+    "/Users/andrew/Desktop/Projects/Examples_Hello/Examples Hello.csproj": {}
   },
   "projects": {
-    "/Users/andrew/Desktop/Projects/Examples Hello/Examples Hello.csproj": {
+    "/Users/andrew/Desktop/Projects/Examples_Hello/Examples Hello.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andrew/Desktop/Projects/Examples Hello/Examples Hello.csproj",
+        "projectUniqueName": "/Users/andrew/Desktop/Projects/Examples_Hello/Examples Hello.csproj",
         "projectName": "Examples Hello",
-        "projectPath": "/Users/andrew/Desktop/Projects/Examples Hello/Examples Hello.csproj",
+        "projectPath": "/Users/andrew/Desktop/Projects/Examples_Hello/Examples Hello.csproj",
         "packagesPath": "/Users/andrew/.nuget/packages/",
-        "outputPath": "/Users/andrew/Desktop/Projects/Examples Hello/obj/",
+        "outputPath": "/Users/andrew/Desktop/Projects/Examples_Hello/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/andrew/.nuget/NuGet/NuGet.Config"
