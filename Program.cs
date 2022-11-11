@@ -104,7 +104,7 @@ Console.WriteLine(result);
 
 //Задача 23
 //Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
-Console.WriteLine("Введите число:");
+/*Console.WriteLine("Введите число:");
 int N = int.Parse(Console.ReadLine());
 Console.WriteLine();
 int i;
@@ -113,3 +113,62 @@ int i;
         double kub = Math.Pow(i, 3);
         Console.WriteLine(kub);
     }
+*/
+//Семинар 4
+//Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B. Сделать в функции, сделать проверку на отрицательность.
+/*Console.WriteLine("Введите число:");
+int N = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите степень:");
+int Stepen = int.Parse(Console.ReadLine());
+if (N>0 && Stepen>0)  
+        { double Result = Math.Pow(N, Stepen);
+             Console.WriteLine(Result);
+              }
+    else   {
+        Console.WriteLine("Вы ввели отрицательное число");
+        double Result = Math.Pow(N, Stepen);
+             Console.WriteLine(Result);
+    }
+*/
+ //   Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+ /*int metod(int number)
+    {  
+    if (number<10)
+    return number;
+    int ostatok = number/10;
+    int cifra = number%10;
+    return cifra+metod(ostatok);
+    }
+ 
+ Console.WriteLine("Введите число:");
+int number = int.Parse(Console.ReadLine());
+int result = metod(number);
+Console.WriteLine(result);
+*/
+
+//Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран. Элементы задаются рандомно (диапазон выбрать самостоятельно) Итоговый массив должен содержать в себе суммы цифр числа. Т.е. необходимо подсчитывать суммы цифр каждого числа и записывать их в новый массив.
+/*
+int metod(int x)
+    {  
+    if (x<10)
+    return x;
+    int ostatok = x/10;
+    int cifra = x%10;
+    return cifra+metod(ostatok);
+    }
+ 
+int[] Array = new int[8];
+Random rand = new Random();
+            
+        for (int x = 0; x < Array.Length; x++)
+            {
+                Array[x] = rand.Next(99);
+                Console.WriteLine("Рандомное значение элемента массива " + x + " = " + Array[x]);
+            }
+          Console.WriteLine();
+        for (int y = 0; y < Array.Length; y++)
+            {
+                Array[y] = metod(Array[y]);
+                Console.WriteLine("Cумма чисел элемента массива " + y + " = " + Array[y]);
+            }
+     */ 
