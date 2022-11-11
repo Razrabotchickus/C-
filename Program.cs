@@ -207,8 +207,10 @@ Random rand = new Random();
 
         */
 
+
+        //Урок 7. Как не нужно писать код. Часть 1
         //Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
-      
+      /*
         Console.Write("Введите размерность массива m:");
         int m =int.Parse(Console.ReadLine());
         Console.Write("Введите размерность массива n:");
@@ -239,3 +241,95 @@ Random rand = new Random();
             FillArray(matrix);
             Console.WriteLine();
             PrintArray(matrix);
+*/
+/*Задача 50. Напишите программу, которая на вход принимает позиции элемента в 
+двумерном массиве, и возвращает значение этого элемента или же указание, 
+что такого элемента нет.
+        Console.Write("Введите размерность массива m:");
+        int m =int.Parse(Console.ReadLine());
+        Console.Write("Введите размерность массива n:");
+        int n =int.Parse(Console.ReadLine());
+
+        void PrintArray(int[,] matr)
+            {
+            for (int i = 0; i < matr.GetLength(0); i++)
+            {
+            for (int j = 0; j < matr.GetLength(1); j++)
+            {
+            Console.Write($"{matr[i, j]} ");
+            }
+            Console.WriteLine();
+            }
+            }
+            void FillArray(int[,] matr)
+            {
+            for (int i = 0; i < matr.GetLength(0); i++)
+            {
+            for (int j = 0; j < matr.GetLength(1); j++)
+            {
+            matr[i,j] = new Random().Next(-10,10);//[1; 10)
+            }
+            }
+            }
+            int[,] matrix = new int[m, n];
+            FillArray(matrix);
+            Console.WriteLine();
+            PrintArray(matrix);
+        Console.Write("Введите первую позицию элемента массива:");
+
+        int a =int.Parse(Console.ReadLine());
+        Console.Write("Введите вторую позицию элемента массива:");
+        int b =int.Parse(Console.ReadLine());
+        if (a > m | b > n) 
+        Console.Write("Такого числа в массиве нет");
+        Console.Write(matrix[a,b]);
+*/
+/*Задача 52. Задайте двумерный массив из целых чисел. 
+Найдите среднее арифметическое элементов в каждом столбце.*/
+       Console.Write("Введите размерность массива m:");
+        int m =int.Parse(Console.ReadLine());
+        Console.Write("Введите размерность массива n:");
+        int n =int.Parse(Console.ReadLine());
+        void PrintArray(int[,] matr)
+            {
+            for (int i = 0; i < matr.GetLength(0); i++)
+            {
+            for (int j = 0; j < matr.GetLength(1); j++)
+            {
+            Console.Write($"{matr[i, j]} ");
+            }
+            Console.WriteLine();
+            }
+            }
+            void FillArray(int[,] matr)
+            {
+            for (int i = 0; i < matr.GetLength(0); i++)
+            {
+            for (int j = 0; j < matr.GetLength(1); j++)
+            {
+            matr[i,j] = new Random().Next(0,10);//[1; 10)
+            }
+            }
+            }
+            int[,] matrix = new int[m, n];
+            FillArray(matrix);
+            Console.WriteLine();
+            PrintArray(matrix);
+
+   
+     
+     for (int j = 0; j < n; j++)    //ошибки выдает, не понимаю как сделать 
+            {
+                int sum = 0;
+                int arr=0;
+                int row=0;
+                int sr_z=0;
+                int sred=0;
+                for (int i = 0; i < m; i++)
+                {
+                    arr[i, j] = row.Next(1, 10);
+                    sum += arr[i, j]; 
+                }
+                sr_z = sum / m; 
+                sred[j] = sr_z; 
+            }
