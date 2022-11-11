@@ -172,3 +172,70 @@ Random rand = new Random();
                 Console.WriteLine("Cумма чисел элемента массива " + y + " = " + Array[y]);
             }
      */ 
+
+     //Семинар 6
+     //Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+   /* Console.Write("Введите колличество чисел:");
+    int lenght = int.Parse(Console.ReadLine());
+    int[] Array = new int[lenght];
+    int count = 0;
+    for (int x = 0; x < Array.Length; x++)
+        {
+        Console.Write($"Введите число {x+1}:");
+        Array[x]=int.Parse(Console.ReadLine());
+        } 
+    for (int x = 0; x < Array.Length; x++)
+        {
+        if (Array[x]>0) 
+        count = count+1;
+        }
+        Console.WriteLine($"Количество чисел больше 0:  {count}");
+        */
+
+        /*Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых,
+        заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+        Console.Write("Введите b1:");
+        int b1=int.Parse(Console.ReadLine());
+        Console.Write("Введите k1:");
+        int k1=int.Parse(Console.ReadLine());
+        Console.Write("Введите b2:");
+        int b2=int.Parse(Console.ReadLine());
+        Console.Write("Введите k2:");
+        int k2=int.Parse(Console.ReadLine());
+
+        На потом как нибудь
+
+        */
+
+        //Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+      
+        Console.Write("Введите размерность массива m:");
+        int m =int.Parse(Console.ReadLine());
+        Console.Write("Введите размерность массива n:");
+        int n =int.Parse(Console.ReadLine());
+
+        void PrintArray(int[,] matr)
+            {
+            for (int i = 0; i < matr.GetLength(0); i++)
+            {
+            for (int j = 0; j < matr.GetLength(1); j++)
+            {
+            Console.Write($"{matr[i, j]} ");
+            }
+            Console.WriteLine();
+            }
+            }
+            void FillArray(int[,] matr)
+            {
+            for (int i = 0; i < matr.GetLength(0); i++)
+            {
+            for (int j = 0; j < matr.GetLength(1); j++)
+            {
+            matr[i,j] = new Random().Next(-10,10);//[1; 10)
+            }
+            }
+            }
+            int[,] matrix = new int[m, n];
+            FillArray(matrix);
+            Console.WriteLine();
+            PrintArray(matrix);
